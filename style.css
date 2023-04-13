@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: fit-content;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.click-area {
+  flex-grow: 2;
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+
+  background: #950000;
+  cursor: pointer;
+}
+
+.display-text {
+  padding: 24px;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.recent-scores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 125px;
+  flex-shrink: 0;
+}
+
+.top-scores {
+  margin: 1rem;
+}
+
+.score {
+  flex-grow: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px;
+}
+
+.score:nth-child(odd) {
+  background: #eeeeee;
+}
